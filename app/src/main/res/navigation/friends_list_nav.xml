@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/friends_list_nav"
+    app:startDestination="@id/friendsListFragment">
+
+    <fragment
+        android:id="@+id/friendsListFragment"
+        android:name="com.example.simpleproject.view.FriendsListFragment"
+        android:label="FriendsListFragment"
+        tools:layout="@layout/fragment_friends_list">
+        <action
+            android:id="@+id/action_to_retrofitCallsFragment"
+            app:destination="@id/retrofitCallsFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/retrofitCallsFragment"
+        android:name="com.example.simpleproject.view.RetrofitCallsFragment"
+        android:label="fragment_retrofit_calls"
+        tools:layout="@layout/fragment_retrofit_calls" />
+</navigation>
